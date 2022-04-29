@@ -1,0 +1,90 @@
+:root{
+    --vermelho:rgb(229, 9, 20);
+    --preta:rgb(0, 0, 0);
+    --cinza:#AAA;
+    --branco:#fff;
+    --transparente:rgba(0,0,0,.50);  
+}*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/*
+Elementos base do body
+*/body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
+}/*
+Elementos base da tag header
+*/header .logo{
+   color: var(--vermelho);
+    font-family:Arial black, monospace;
+    font-size: 40px;
+    margin-left: 3px;
+}header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}header nav a:hover{
+    color:var(--branco);
+}header .container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+}/*
+Elementos base classe main
+*/main .animePrincipal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%),url('/img/bleach.jpg');
+    height: 400px ;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    /*
+    Esses dois abaixo sempre dependerm desse flex-direction, não se esqueça
+    */
+    justify-content: center;
+    align-items: flex-start;
+}/*
+Criação dos botões de navegação
+*/main.animePrincipal .descricao{
+    margin-bottom: 40px;
+}/*tuitulo*/ h3{
+    margin-top:30%;
+    display: block;
+    font-size: 40px;
+    margin-block-start: 0.83em;
+    font-family: "Helvetica Neue",'Times New Roman', Times, serif;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}/*
+Criação da estilização dos botões
+*/main .botao{
+    background-color:var(--transparente);
+    order:none ;
+    color:white !important;
+    padding:15px 40px;
+    margin-right: 18px;
+    font-size: 12px;
+    cursor:pointer;
+    transition: .3s ease all;
+    border-radius:5px;
+}.botao:hover{
+    background-color:var(--vermelho);
+
+}.botao i{
+    margin-right:5px;
+}
+main .animePrincipal .container{
+    width: 40%;
+}.boxAnime{
+    height:380px;
+    width: 100%;
+    display:block;
+    margin-top:20 px;
+}.carrosel-Animes{
+    margin-top:10 px;
+}
